@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline"
+            app:layout_constraintGuide_begin="216dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+    />
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" app:srcCompat="@drawable/ic_default_headshot"
+            android:id="@+id/ivPlayerAImage"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPlayerARow1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@+id/ivPlayerAImage"
+            android:layout_marginTop="5dp"
+            tools:text="D. Edwards (1)"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPlayerARow2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/ivPlayerAImage"
+            tools:text="Full Back(Stat 21)"
+    />
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" app:srcCompat="@drawable/ic_default_headshot"
+            android:id="@+id/ivPlayerBImage"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPlayerBRow1"
+            tools:text="D. Edwards (1)"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp" android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/ivPlayerBImage" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="5dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPlayerBRow2"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp" android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/ivPlayerBImage" tools:text="Full Back(Stat 21)"/>
+</android.support.constraint.ConstraintLayout>
